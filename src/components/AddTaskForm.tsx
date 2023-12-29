@@ -17,8 +17,8 @@ const AddTaskForm: React.FC<TaskForm> = ({ onAdd }) => {
   };
 
   return (
-    <div>
-      <input type="text" value={task} onChange={inputChange} placeholder="Add new task" />
+    <div className="inputBox">
+      <input type="text" value={task} onChange={inputChange} placeholder="Add new task" className="taskInput" />
       <button onClick={addTask}>Add</button>
     </div>
   );

@@ -31,7 +31,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="toDoList">
       <h1>ToDo List</h1>
       <AddTaskForm onAdd={addTask} />
       {tasks.map((task) => (
